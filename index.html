@@ -2,6 +2,7 @@
 <html> 
   
 <head> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title> 
         How to check whether a radio button 
         is selected with JavaScript ? 
@@ -41,12 +42,46 @@
   
 </body>  
     <script> 
-        function display() {  
+$(document).ready(function(){
+  $("button").click(function(){  
             if(document.getElementById('GFG').checked) { 
      $("#div1").load("Untitled-3.html");} 
-        } 
+        } }
     </script> 
+ 
 </html>    
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    if (value="option1") 
+    $("#div1").load("Untitled-3.html");
+  });
+});
+  /* Script IF id-right-checked then load() */
+</script>
+</head>
+<body>
+
+<div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
+
+<button>Get External Content</button>
+  
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios1">
+    Default radio
+  </label>
+</div>
+
+</body>
+</html>
+
 
 
 
