@@ -1,20 +1,52 @@
-<!DOCTYPE html>
-<html>
-<head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("button").click(function(){
-    $("#div1").load("Untitled-3.html");
-  });
-});
-</script>
-</head>
-<body>
+<!DOCTYPE html> 
+<html> 
+  
+<head> 
+    <title> 
+        How to check whether a radio button 
+        is selected with JavaScript ? 
+    </title> 
+</head> 
+  
+<body>  
+      
+    <h1 style="color:green;"> 
+        GeeksforGeeks 
+    </h1> 
+      
+    <h3> 
+        Click on the button to check whether<br> 
+        a radio button is sected or not 
+    </h3> 
+      
+    <form> 
+        <input type="radio" name="GFG" id="GFG"
+            value="GeeksforGeeks">GeeksforGeeks<br> 
+          
+        <input type="radio" name="GFG" id="HTML"
+            value="HTML">HTML<br> 
+          
+        <input type="radio" name="GFG" id="JS"
+            value="JavaScript">JavaScript<br><br> 
+      
+        <button type="button" onclick="display()"> 
+            Submit 
+        </button> 
+    </form> 
+    <br> 
+    <div id="disp" style= 
+        "color:green; font-size:18px; font-weight:bold;"> 
+    </div>  
+</body>  
+    <script> 
+        function display() {  
+            if(document.getElementById('GFG').checked) { 
+     $("#div1").load("Untitled-3.html");} 
+        } 
+    </script> 
+</html>    
 
-<div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
 
-<button>Get External Content</button>
 
-</body>
-</html>
+
+
